@@ -1,0 +1,72 @@
+@media screen and (max-width: 920px) {
+    body {
+        overflow-x: hidden;
+    }
+    
+    //animation navMenu
+    nav {    
+        position: fixed;
+        top:0;
+        width: 100vw;
+        .links {
+            position: absolute;
+            right: 0px;
+            top: 9vh;
+            height: 91vh;
+            background-color: #364f6b;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            width: 40%;
+            transform: translateX(100%);
+            transition: transform 0.5s ease-in;
+            li {
+                opacity: 0;
+            }
+        }
+
+        .nav-active {
+            transform: translateY(0%);
+        }
+
+
+        .burger {
+            display: block;
+            cursor: pointer;
+        }
+
+        .burger div{
+            width: 20px;
+            height: 2px;
+            background-color: $yellowDark;
+            margin: 5px;
+            transition: all 0.5s ease-in-out;
+        }
+        .toggle .line1{
+            transform: rotate(45deg) translate(5px, 5px)
+        }
+        .toggle .line2{
+            opacity: 0;
+        }
+        .toggle .line3{
+            transform: rotate(-45deg) translate(5px, -5px)
+
+        }
+    }
+
+
+}
+section#modalinsertProbing{
+    width: 100vw;
+    form {
+        width: 100%;
+        .loadCSV {
+            display: flex;
+            flex-direction: column;
+            a {
+                margin: 1rem;
+            }
+        }
+    }
+}

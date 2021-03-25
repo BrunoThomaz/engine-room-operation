@@ -1,0 +1,82 @@
+#content{
+    .tasks {
+        height: 200px;
+        padding: 1rem;
+        width: 95vw;
+        margin: 13vh auto 2vh;
+        background-color: #FEFEFE;
+        scroll-behavior: smooth;
+        h3 {
+            text-align: center;
+            padding-bottom: 1rem;
+        }
+        .taskOptions {
+            display: flex;
+            margin: 0 auto 8px;
+            justify-content: center;
+            
+            span {
+                display: grid;
+                place-items: center;
+                padding: .2rem .4rem;
+                background-color: #364f6b;
+                color: #FFFFFF;
+                font-weight: 800;
+                font-size: 20px;
+                line-height: 0;
+                width: 24px;
+                height: 24px;
+                border-radius: 4px;
+                cursor: pointer;
+                transition: all .2s ease-in;
+                margin-right: 4px;
+    
+            }
+            span:last-child {
+                margin-right: 0;
+            }
+            span:hover {
+                background-color: #364f6b;
+            }
+            span:active {
+                background-color: #364f6b87;
+            }
+        }
+        .taskList {
+            overflow-y: scroll;
+            height: 100px;
+            li{ 
+                display: flex;
+                justify-content: space-between;
+                overflow: hidden;
+                width: 95%;
+                transition: all .1s ease-in;
+                border-left: 2px solid #364f6b;
+                margin: 4px;
+                list-style: none;
+            }
+            li:hover {
+                border-left: 8px solid #364f6b;
+            }
+            li:active {
+                border-left: 8px solid #364f6b87;
+            }
+            span.remove {
+                display: grid;
+                place-items: center;
+                padding: .2rem .4rem;
+                background-color: #364f6b;
+                color: #FFFFFF;
+                font-weight: 800;
+                font-size: 20px;
+                line-height: 0;
+                min-width: 24px;
+                min-height: 24px;
+                border-radius: 4px;
+                cursor: pointer;
+                transition: all .2s ease-in;
+                margin-right: 4px;
+            }
+        }
+    }
+}

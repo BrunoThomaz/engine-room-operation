@@ -1,0 +1,36 @@
+<input type="file" name="" id="file" style="display: none;">
+<label for="file" id="label" style=
+"
+display: grid; 
+place-self: center; 
+text-align: center;
+background-color: antiquewhite;
+color:#0e0e0e5d; 
+font-size: 2rem; 
+padding: 2rem; 
+margin: 2rem; 
+border: 1px solid rgb(95, 95, 95);
+border-radius: 4px;
+"
+>Choose a file to replace ',' for '.'</label>
+
+<script>
+    const input = document.querySelector("#file")
+    const label = document.querySelector("#label")
+    file.addEventListener('change', (event) => {
+        const file = event.target.files[0]
+        const reader = new FileReader()
+        reader.onloadend = (event) => {
+            let str = event.target.result
+            str = str.replace(/[,]/gm, '.')
+            
+            var hiddenElement = document.createElement('a');
+            hiddenElement.href = 'data:text/csv;charset=utf-8,' + encodeURI(str);
+            hiddenElement.target = '_blank';
+            hiddenElement.download = file.name;
+            hiddenElement.click();
+            label.textContent = "Downloading new file..."
+        }
+        reader.readAsText(file)
+    })
+</script>

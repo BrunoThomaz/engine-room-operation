@@ -1,0 +1,32 @@
+{
+    "name":"Engine Room Operation",
+    "short_name": "ERO",
+    "start_url":"./index.html",
+    "display":"standalone",
+    "theme_color":"#364f6b",
+    "background_color":"#364f6b",
+    "description":"App to help at industrial facilities",
+    "orientation":"portrait-primary",
+    "lang":"en-US",
+    "dir":"ltr",
+    "icons":[{
+        "src":"./src/img/icons/icon92x92.png",
+        "sizes":"92x92",
+        "type":"image/png"
+    },
+    {
+        "src":"./src/img/icons/icon144x144.png",
+        "sizes":"144x144",
+        "type":"image/png"
+    },
+    {
+        "src":"./src/img/icons/icon256x256.png",
+        "sizes":"256x256",
+        "type":"image/png"
+    },
+    {
+        "src":"./src/img/icons/icon512x512.png",
+        "sizes":"512x512",
+        "type":"image/png"
+    }]
+}

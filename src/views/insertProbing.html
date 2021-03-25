@@ -1,0 +1,79 @@
+<div id="bar"></div>
+<form>
+    <a href="#" id="close">X</a>
+    <div class="formType propulsion standby loadCSV row">   
+            <div class="item propulsion standby loadCSV">
+                <label>Propulsion</label>
+                <input type="radio" name="formType" value="propulsion" checked>
+            </div>
+            <div class="item propulsion standby loadCSV">
+                <label>Stand-By</label>
+                <input type="radio" name="formType" value="standby">
+            </div>
+            <div class="item propulsion standby loadCSV">
+                <label>CSV Files</label>
+                <input type="radio" name="formType" value="loadCSV">
+            </div>
+    </div>
+    <div id="date" class="propulsion standby">
+        <label for="date">Date</label>
+        <input type="date" name="date">
+    </div>
+    <div id="time" class="propulsion standby">
+        <label for="time">Time</label>
+        <input type="time" name="time">
+    </div>
+    <div id="hydrometer" class="propulsion standby">
+        <label for="hydrometer">Main Hydrometer</label>
+        <input type="number" name="water">
+    </div>
+    <div id="oleometer" class="propulsion standby">
+        <label for="oleometer">Oleometer</label>
+        <input type="number" name="fuel">
+    </div>
+    <div id="serviceMGO" class="propulsion standby">
+        <label for="serviceMGO">Service Tank MGO</label>
+        <input type="number" name="serviceMGO">
+    </div>
+    <div id="boiler" class="propulsion standby">
+        <label for="boiler">Boiler Water Tank</label>
+        <input type="number" name="boiler">
+    </div>
+    <div id="freshWater" class="propulsion">
+        <label for="freshWater">Fresh Water Hydrometer</label>
+        <input type="number" name="freshWater">
+    </div>
+    <div class="propulsion">
+        <label for="exaustGas">Exaust Gas</label>
+    </div>
+    <div id="exaustGas" class="propulsion row">
+        <input type="number" name="exaustCyl1">
+        <input type="number" name="exaustCyl2">
+        <input type="number" name="exaustCyl3">
+        <input type="number" name="exaustCyl4">
+        <input type="number" name="exaustCyl5">
+    </div>
+    <div class="propulsion">
+        <label for="waterCyl">Cylinder Cooling Water Outlet</label>
+    </div>
+    <div id="waterCyl" class="propulsion row">
+        <input type="number" name="waterCyl1">
+        <input type="number" name="waterCyl2">
+        <input type="number" name="waterCyl3">
+        <input type="number" name="waterCyl4">
+        <input type="number" name="waterCyl5">
+    </div>
+    <div class="propulsion standby">
+        <a href="#" id="save" class="propulsion standby">Save</a>
+
+    </div>
+    <div class="loadCSV file">
+        <label for="inputCSV" id="fileLabel">Click to choose a file</label>
+        <input type="file" name="data" id="inputCSV">
+        <a href="#" id="data">Load File</a href="#">
+    </div>
+    <div class="downloadCSV">
+        <label for="download">Or</label>
+        <a href="#" id="download">Download</a>
+    </div>
+</form>

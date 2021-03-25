@@ -1,0 +1,106 @@
+<div id="bar"></div>
+
+<form>
+    <a href="#" id="close">X</a>
+    <div class="formType engine boiler loadCSV row">   
+            <div class="item engine boiler loadCSV">
+                <label>Boiler</label>
+                <input type="radio" name="formType" value="boiler" checked>
+            </div>
+            <div class="item engine boiler loadCSV">
+                <label>Diesel Engines</label>
+                <input type="radio" name="formType" value="engine">
+            </div>
+            <div class="item engine boiler loadCSV">
+                <label>CSV Files</label>
+                <input type="radio" name="formType" value="loadCSV">
+            </div>
+    </div>
+    <div id="date" class="boiler engine">
+        <label for="date">Date</label>
+        <input type="date" name="date">
+    </div>
+    <div id="time" class="boiler engine">
+        <label for="time">Time</label>
+        <input type="time" name="time">
+    </div>
+    <div id="a'" class="boiler">
+        <label for="pAlcalinity"> P. Alcalinity</label>
+        <input type="number" name="pAlcalinity">
+    </div>
+    <div id="tAlcalinity" class="boiler">
+        <label for="tAlcalinity"> T. Alcalinity</label>
+        <input type="number" name="tAlcalinity">
+    </div>
+    <div id="phosphate" class="boiler">
+        <label for="phosphate">Phosphate</label>
+        <input type="number" name="phosphate">
+    </div>
+    <div id="chloride" class="boiler">
+        <label for="chloride">Chloride</label>
+        <input type="number" name="chloride">
+    </div>
+    <div id="bw-250" class="boiler">
+        <label for="bw-250">BW-250 Treatment</label>
+        <input type="number" name="bw-250">
+    </div>
+    <div id="pHBoiler" class="boiler">
+        <label for="pHBoiler">pH</label>
+        <input type="number" name="pHBoiler">
+    </div>
+    <div id="blowdown" class="boiler">
+        <label for="blowdown">Blowdown</label>
+        <input type="number" name="blowdown">
+    </div>
+
+    <div class="engine">
+        <label for="waterCyl">Cylinder Cooling Water</label>
+    </div>
+    <div id="nitriteCyl" class="engine row">
+        <label for="nitriteCyl">Nitrite (ppm)</label>
+        <input type="number" name="nitriteCyl">
+        <label for="chlorideCyl">Chloride (ppm)</label>
+        <input type="number" name="chlorideCyl">
+    </div>
+    <div class="engine">
+        <label for="waterPis">Piston Cooling Water</label>
+    </div>
+    <div id="nitritePis" class="engine row">
+        <label for="nitritePis">Nitrite (ppm)</label>
+        <input type="number" name="nitritePis">
+        <label for="chloridePis">Chloride (ppm)</label>
+        <input type="number" name="chloridePis">
+    </div>
+    <div class="engine">
+        <label for="waterFuel">Fuel Cooling Water</label>
+    </div>
+    <div id="nitriteFuel" class="engine row">
+        <label for="nitriteFuel">Nitrite (ppm)</label>
+        <input type="number" name="nitriteFuel">
+        <label for="chlorideFuel">Chloride (ppm)</label>
+        <input type="number" name="chlorideFuel">
+    </div>
+    <div class="engine">
+        <label for="waterAux">Auxiliary Engines</label>
+    </div>
+    <div id="nitriteAux" class="engine row">
+        <label for="nitriteAux">Nitrite (ppm)</label>
+        <input type="number" name="nitriteAux">
+        <label for="chlorideAux">Chloride (ppm)</label>
+        <input type="number" name="chlorideAux">
+    </div>
+    
+    <div class="boiler engine">
+        <a href="#" id="save" class="boiler engine">Save</a>
+
+    </div>
+    <div class="loadCSV file">
+        <label for="inputCSV" id="fileLabel">Click to choose a file</label>
+        <input type="file" name="data" id="inputCSV">
+        <a href="#" id="data">Load File</a href="#">
+    </div>
+    <div class="downloadCSV">
+        <label for="download">Or</label>
+        <a href="#" id="download">Download</a>
+    </div>
+</form>

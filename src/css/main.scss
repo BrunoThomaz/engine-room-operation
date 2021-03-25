@@ -1,0 +1,67 @@
+@import "variables";
+@import "insertProbing";
+@import "nav";
+@import "content";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.2rem;
+    color: black;
+    background-color: #e6e3e3;
+    #requestNotification {
+        display: block;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100vw;
+        height: 0vh;
+        background-color: $blueDark;
+        display: grid;
+        place-items: center;
+        transition: all .3s ease-in;
+        h3 {
+            text-align: center;
+            width: 300px;
+            padding: 1rem;
+            background-color: #364f6b;
+            color: #FFFFFF;
+            font-weight: 800;
+            font-size: 18px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all .1s ease-in;
+            margin-right: 4px;
+
+        }
+        h3:hover {
+            background-color: #202f41;
+        }
+        h3:active {
+            background-color: #364f6b87;
+        }
+        span {
+            display: grid;
+            place-items: center;
+            cursor: pointer;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 32px;
+            height: 32px;
+            background-color: $yellowLight;
+            color: #202f41;
+
+        }
+    }
+}
+    
+
+
+
+
+@import "mediaQueries";

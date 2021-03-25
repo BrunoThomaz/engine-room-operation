@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#364f6b">
+    <title>Engine Room Operation</title>
+    <link rel="stylesheet" href="./src/css/main.css">
+    <link rel="manifest" href="./manifest.json">
+</head>
+<body>
+    <script>
+        localStorage.setItem('tasks',"You can delete this task clicking the button '-' and after 'remove';Download an example of data in brunothomaz.ml/ero/out2020.csv;You can load clicknig Insert Probing link menu >>Load CSV;");
+    </script>
+    <header id="topMenu">
+        <nav>
+            <div class="logo">
+                <a href="#">
+                    ERO
+                </a>
+                
+            </div>
+            <ul class="links">
+                <li>
+                    <a href="./index.html" id="overview"class="active">Overview</a>
+                </li>
+                <li>
+                    <a href="#" id="insertProbing">Insert Probing</a>
+                </li>
+                <li>
+                    <a href="#" id="waterTreatment">Water Treatment</a>
+                </li>
+            </ul> 
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+    <section id="content">
+        <section class="tasks">
+            <h3>Task List</h3>
+            <div class="taskOptions">
+                <span class="add">+</span>
+                <span id="reload">
+                    <svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path fill="currentColor" d="M370.72 133.28C339.458 104.008 298.888 87.962 255.848 88c-77.458.068-144.328 53.178-162.791 126.85-1.344 5.363-6.122 9.15-11.651 9.15H24.103c-7.498 0-13.194-6.807-11.807-14.176C33.933 94.924 134.813 8 256 8c66.448 0 126.791 26.136 171.315 68.685L463.03 40.97C478.149 25.851 504 36.559 504 57.941V192c0 13.255-10.745 24-24 24H345.941c-21.382 0-32.09-25.851-16.971-40.971l41.75-41.749zM32 296h134.059c21.382 0 32.09 25.851 16.971 40.971l-41.75 41.75c31.262 29.273 71.835 45.319 114.876 45.28 77.418-.07 144.315-53.144 162.787-126.849 1.344-5.363 6.122-9.15 11.651-9.15h57.304c7.498 0 13.194 6.807 11.807 14.176C478.067 417.076 377.187 504 256 504c-66.448 0-126.791-26.136-171.315-68.685L48.97 471.03C33.851 486.149 8 475.441 8 454.059V320c0-13.255 10.745-24 24-24z">
+                    </path>
+                    </svg>
+                </span>
+            </div>
+            <ul name="tasks" class="taskList">
+            </ul>
+
+        </section>
+        <section id="charts">
+            <div id="water">
+                <div class="preview ">
+                    <h3 class="fluxChart">Load Water Chart</h3>
+                </div>
+                <div class="chartSettings"></div>
+                <canvas id = "waterLine"></canvas>
+            </div>
+            <div id="fuel">
+                <div class="preview ">
+                    <h3 class="fluxChart">Load Fuel Chart</h3>
+                </div>
+                <div class="chartSettings"></div>
+                <canvas id = "fuelLine"></canvas>
+            </div>
+            <div id="boiler">
+                <div class="preview ">
+                    <h3 class="boilerChart">Load Boiler Water Chart </h3>
+                </div>
+                <div class="chartSettings"></div>
+                <canvas id = "boilerLine"></canvas>
+            </div>
+            <div id="exaustCyl">
+                <div class="preview ">
+                    <h3 class="tempChart">Load Exaust Gas Chart </h3>
+                </div>
+                <div class="chartSettings"></div>
+                <canvas id = "exaustCylBar"></canvas>
+            </div>
+            <div id="waterCyl">
+                <div class="preview ">
+                    <h3 class="tempChart">Load Water Cylinder Chart </h3>
+                </div>
+                <div class="chartSettings"></div>
+                <canvas id = "waterCylBar"></canvas>
+            </div>
+            
+        </section>
+    </section>
+
+    <section id="modal"></section>
+    <div id="requestNotification"></div>
+    <script src="./src/js/Chart.min.js"></script>
+    <script src="./src/js/charting.js"></script>
+    <script src="./src/js/forming.js"></script>
+    <script src="./src/js/styling.js"></script>
+    <script src="./src/js/tasking.js"></script>
+    <script src="./src/js/main.js"></script>
+</body>
+</html>
