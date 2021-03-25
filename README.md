@@ -8,11 +8,11 @@ I took a ServiceWorker based on the Academind course at udemy.com.
 
 I wrote all the javascript, html and css code.  
 
-It is available live at: [brunothomaz.ml/ero][https://brunothomaz.ml/ero]
+It is available live at: [brunothomaz.ml/ero](https://brunothomaz.ml/ero)
 
 Thanks!
 
 
 
 And thanks StackEdit!!
-> Written with [StackEdit][https://stackedit.io/].
+> Written with [StackEdit](https://stackedit.io/).
